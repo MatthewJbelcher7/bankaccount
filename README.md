@@ -27,11 +27,23 @@ Directions after cloning are as follows:
 
 ## Tests
 ```
-Describe function()
-Test:
-Code: 
-Expected Output:
+Describe function registerAccount()
+Test: It will create an object for a user's bank account.
+Code: let user = new registerAccount("Steve", 100);
+Expected Output: registerAccount("Steve", 100);
+
+Descibe:  function addFunds()
+Test: It will add new deposit to preexisting balance.
+Code: addFunds(500)
+Expected Output: funds = 600
+
+
+Describe: function withDrawFunds()
+Test: It will subtract funds from balance.
+Code: subFunds(500)
+Expected Output: funds = 100
 ```
+
 
 ## Known Bugs
 
