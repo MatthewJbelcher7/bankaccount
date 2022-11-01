@@ -9,15 +9,16 @@ function Bank() {
 Bank.prototype.addUser = function(user) {
   user.id = this.assignId();
   this.users[user.id] = user;
-}
+};
 
 Bank.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 };
 
-function addFunds(newDeposit) {
-  funds += newDeposit
+Bank.prototype.addFunds = function(id, deposit) {
+  let funds = bank.users[id].funds
+  funds = funds + deposit;
 }
 
 function subFunds(newDeposit) {
@@ -37,4 +38,6 @@ User.prototype.fullName = function() {
 
 // UI Logic
 
-let bankAccount = new registerAccount(name, initialDeposit);
+window.addEventListener("load", function (){
+
+}
